@@ -1,1 +1,1 @@
-mkdir keys encoded decoded encrypted decrypted
+mkdir keys encoded decoded encrypted decrypted input

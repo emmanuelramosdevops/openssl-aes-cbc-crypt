@@ -11,9 +11,9 @@ openssl base64 -in ./encrypted/key.enc      -out ./encoded/key.enc.b64
 openssl base64 -in ./encrypted/iv.enc       -out ./encoded/iv.enc.b64
 
 #Copying base64 to input 
-cp ./encoded/file.csv.enc.b64 ../input/grp-banco-pan_20190412110602643109_2019_Faturamento_1000.csv
-cp ./encoded/key.enc.b64   ../input/grp-banco-pan_20190412110602643109_2019_Faturamento_1000.key
-cp ./encoded/iv.enc.b64       ../input/grp-banco-pan_20190412110602643109_2019_Faturamento_1000.iv
+cp ./encoded/file.csv.enc.b64 ./input/20190412110602643109_2019.csv
+cp ./encoded/key.enc.b64   ./input/20190412110602643109_2019.key
+cp ./encoded/iv.enc.b64       ./input/20190412110602643109_2019.iv
 
 #Decode file, key and iv from B64
 openssl base64 -d -in ./encoded/file.csv.enc.b64 -out ./decoded/file.csv.enc
