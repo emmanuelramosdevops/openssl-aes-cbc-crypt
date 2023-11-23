@@ -8,7 +8,7 @@ openssl rsa -in ./keys/private.pem -pubout -outform PEM -out ./keys/public_key.p
 openssl pkcs8 -topk8 -inform PEM -in ./keys/private.pem -out ./keys/private_key.pem -nocrypt
 
 #Generating symetric key
-openssl rand -out ./keys/key -hex 15
+openssl rand -out ./keys/key -hex 16
 
 #Generating iv
-openssl rand -out ./keys/iv -hex 7
+openssl rand -out ./keys/iv -hex 8
